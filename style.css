@@ -1,5 +1,5 @@
-@font-face { font-family: Determination Mono; src: url('/assets/fonts/DeterminationMono.ttf'); }
-@font-face { font-family: Determination Sans; src: url('/assets/fonts/DeterminationSans.ttf'); } 
+@font-face { font-family: Determination Mono; src: url('assets/fonts/DeterminationMono.ttf'); }
+@font-face { font-family: Determination Sans; src: url('assets/fonts/DeterminationSans.ttf'); } 
 
 @keyframes bgScroll {
     0% {
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url("/assets/backgrounds/bg_rebirth.png");
+    background-image: url("assets/backgrounds/bg_rebirth.png");
     animation: bgScroll 30s linear infinite;
     background-color: black;
 }

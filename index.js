@@ -3,12 +3,12 @@ const formatBox = document.querySelector("#format-box")
 const releaseDate = new Date('July 29, 2022 06:00:00');
 let prevSeconds = -1;
 let format = "\\y years, \\d days, \\h hours, \\m minutes, \\s seconds"
-let click = new Audio("/assets/sfx/noise.wav");
-let ding = new Audio("/assets/sfx/ding.wav");
-let piece = new Audio("/assets/sfx/piece.ogg");
-let lv = new Audio("/assets/sfx/lv.wav");
-let revival = new Audio("/assets/sfx/revival.ogg");
-let blip = new Audio("/assets/sfx/blip.wav")
+let click = new Audio("assets/sfx/noise.wav");
+let ding = new Audio("assets/sfx/ding.wav");
+let piece = new Audio("assets/sfx/piece.ogg");
+let lv = new Audio("assets/sfx/lv.wav");
+let revival = new Audio("assets/sfx/revival.ogg");
+let blip = new Audio("assets/sfx/blip.wav")
 let sounds = true
 const formats = [
     "\\y years, \\d days, \\h hours, \\m minutes, \\s seconds",
@@ -195,7 +195,7 @@ document.addEventListener("mouseover", e => {
 });
 
 document.addEventListener(`click`, e => {
-    let select = new Audio("/assets/sfx/select.wav")
+    let select = new Audio("assets/sfx/select.wav")
     if (e.target.closest("a")) select.play()
 });
 
@@ -220,7 +220,7 @@ function changeSong(val = 1) {
         document.querySelector("#player").src = ""
         document.querySelector("#mus-title").innerHTML = "No music"
     } else {
-        document.querySelector("#player").src = "/assets/music/" + songs[song].name + ".ogg"
+        document.querySelector("#player").src = "assets/music/" + songs[song].name + ".ogg"
         document.querySelector("#mus-title").innerHTML = `${songs[song].name} (${songs[song].game})`
     }
 }
