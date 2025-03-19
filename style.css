@@ -1,0 +1,104 @@
+@font-face { font-family: Determination Mono; src: url('/assets/fonts/DeterminationMono.ttf'); }
+@font-face { font-family: Determination Sans; src: url('/assets/fonts/DeterminationSans.ttf'); } 
+
+@keyframes bgScroll {
+    0% {
+        background-position : 0px 0px
+    }
+    100% {
+        background-position : 0px 433px
+    }
+}
+
+body {
+    background-image: url("/assets/backgrounds/bg_rebirth.png");
+    animation: bgScroll 30s linear infinite;
+    background-color: black;
+}
+
+p, a, span, ul {
+    font-family: 'Determination Sans';
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+    font-size: 64px;
+    color: white;
+    margin: 0;
+}
+
+.small, .small * {
+    font-size: 32px;
+}
+.smaller, .smaller * {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+a:not(.btn):hover {
+    text-decoration: underline;
+}
+
+a.btn {
+    color: white;
+}
+
+a.btn:hover {
+    color: yellow;
+}
+
+* {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+}
+
+.timer {
+    margin: auto;
+    min-width: 50%;
+    text-align: center;
+}
+
+.timer-text, .timer-under {
+    position: relative;
+    z-index: 100;
+}
+
+#format-box {
+    width: 750px;
+    height: 50px;
+    text-align: center;
+    resize: none;
+    white-space: pre;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 1em;
+    list-style-type: "*  ";
+}
+
+footer {
+    position: absolute;
+    bottom: 0.5em;
+}
+
+.fader {
+    display: none;
+    opacity: 0;
+    background-color:black; 
+    width: 100%;
+    height: 100%; 
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@keyframes epicFade {
+    from {
+        opacity : 1
+    }
+}

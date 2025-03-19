@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DFCD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fader"></div>
+    <header class="small">
+        <span>DF Countdown (more like DF Countup)</span>
+        <span class="music" style="float: right;"><span id="mus-title">No music</span> <a href="javascript:changeSong(-1);" class="btn"><</a> <a href="javascript:changeSong(1);" class="btn">></a></span>
+        <br>
+        <a id="wegot" class="btn" href="javascript:changeWeGot()"></a>
+        <a id="sound-toggle" style="float: right;" href="javascript:toggleSounds()" class="btn">Countdown Sounds: ON</a>
+        <br>
+        <audio id="player" style="display: none;" src="" controls loop autoplay></audio>
+    </header>
+    <div class="timer">
+        <p class="timer-above"></p>
+        <p class="timer-text" style="font-size: 128px; color: yellow;"></p>
+        <p class="timer-under" style="display: none;">Stay tuned for the update!</p>
+        <div class="format">
+            <p class="small">Write your own countdown format:</p>
+            <textarea id="format-box" placeholder="\y = years, \d = days, \h = hours, \m = minutes, \s = seconds, \x = milliseconds&#10;Capitalize for extra 0's at the start, like \M or \S.&#10;Use c to combine with previous units, like \ch which will combine years, days and hours."></textarea><br>
+            <span class="small"><a class="btn" href="javascript:applyFormat()">Apply</a> | <a class="btn" href="javascript:randomFormat()">Random</a></span>
+        </div>
+    </div>
+    <div class="progress-reports smaller" style="margin:auto;">
+        <p>Check these out while waiting, for a recap of what's in v2.8:</p>
+        <ul>
+            <li><a href="https://gamejolt.com/p/september-2023-progress-report-read-inside-for-a-status-up-be3ytxcg" target="_blank">September 2023 Progress Report (Lost World 4, DF Editor, Undertale anniversary etc.)</a></li>
+            <li><a href="https://youtube.com/watch?v=kmkJPP9liZY">UNDEREVENT 2023 Trailer (Release date, Cyber World, Lost World 4, Jevil, Spamton, Swap!Alphys, Swap!Undyne, Reimu, Clover etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/december-2023-progress-report-read-inside-for-a-status-upd-qns7bphj" target="_blank">December 2023 Progress Report (Trailer recap, end-of-service info, restructuring etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-january-2024-progress-report-read-inside-for-3zhqkacc" target="_blank">January 2024 Progress Report (Update delayed, community servers overview, partners teaser, Yoki etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-march-2024-mini-status-update-read-inside-for-ppszzimg" target="_blank">March 2024 Mini Status Update (Update delayed again, partners sneak peek etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-april-2024-progress-report-read-inside-for-a-853cpwhr" target="_blank">April 2024 Progress Report (Party members, New Run+, Local Play, Underfell Toriel, Lucas etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-may-2024-mini-status-update-read-inside-for-t-cmg4kzbi" target="_blank">May 2024 Mini Status Update (DF anniversary etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-august-2024-progress-report-read-inside-for-a-ffv4hzip" target="_blank">August 2024 Progress Report (Cyber World details, overhead chat, the Batter etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-october-2024-mini-status-update-read-inside-f-2aqjygbg" target="_blank">October 2024 Mini Status Update (Undernet 2.0, Deltarune anniversary etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-december-2024-progress-report-read-inside-for-4jry79dp" target="_blank">December 2024 Progress Report (Overworld revamp, new corruptions etc.)</a></li>
+            <li><a href="https://gamejolt.com/p/dontforget-february-2025-mini-status-update-read-inside-6hxfwcbb" target="_blank">February 2025 Mini Status Update (New party UI, Party Bond, new spells etc.)</a></li>
+        </ul>
+        <p>These are a bit more outdated, but still worth reading:</p>
+        <ul>
+            <li><a href="https://gamejolt.com/p/december-2022-progress-report-read-inside-for-a-status-upd-dxsxxqqy">December 2022 Progress Report (End-of-service, old release plans, old PvP overhaul, Warden, DF PERPETUAL etc.)</a></li>
+            <li><a href="https://youtu.be/WT4f_-ZVb2I">UNDEREVENT 2022 Trailer (DF CONNECTED's story)</a></li>
+            <li><a href="https://gamejolt.com/p/may-2023-progress-report-read-inside-for-a-some-thoughts-o-9ugisvvq" target="_blank">May 2023 Progress Report (DF anniversary, trailer recap, new equipment, fusion system, Dream Crystals, outbreaks etc.)</a></li>
+        </ul>
+    </div>
+    <!-- <footer class="small">
+        <p>Created by <span style="color:#ff0076">hflyer</span></p>
+    </footer> -->
+    <script src="index.js"></script>
+</body>
+</html>
