@@ -65,7 +65,9 @@ const weGot = [
     { name: "TS!Underswap Demo v2.0", url: "https://gamejolt.com/games/tsunderswap/160094" },
     { name: "DELTATRAVELER Section 3", url: "https://gamejolt.com/games/deltatraveler/661464" },
     { name: "PS!Outertale", url: "https://gamejolt.com/games/outertale/643082" },
-    { name: "Spamton Sweepstakes", url: "https://deltarune.com/sweepstakes/" }
+    { name: "Spamton Sweepstakes", url: "https://deltarune.com/sweepstakes/" },
+    { name: "Spamton Sweepstakes 2", url: "https://deltarune.com/sweepstakes/silence/" },
+    { name: "DELTARUNE CHAPTERS 3&4", url: "https://deltarune.com/" }
 ]
 const songs = [
     { name: "Grillbz", game: "DONTFORGET" },
